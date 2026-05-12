@@ -1,9 +1,10 @@
-import {calculateTotal }from "./descuentos";
-import { calcularEnvio } from "./envio";
-import { vip } from "./vip";
+import { calculateTotal } from "./descuentos.js";
+import { calcularEnvio } from "./envio.js";
+import { vipOne } from './vip.js';
 
-let name = prompt("Ingresa tu nombre:");
-console.log(productos);
+let name = "Paulina";
 
-
-calculateTotal();
+console.log("Cliente:", name);
+console.log("Total con descuento:", calculateTotal(1000));
+console.log("Costo de envío:", calcularEnvio(10));
+console.log("", vipOne(25, 1200));
